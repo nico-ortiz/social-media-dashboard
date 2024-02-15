@@ -1,0 +1,241 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#header .subtitle {
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+#header .btn-container {
+    display: flex;
+    align-items: center;
+}
+
+#header .btn-container .btn-txt {
+    color: var(--dark-grayish-blue);
+    font-weight: 700;
+}
+
+#header .btn-container .btn-change-theme {
+    width: 40px;
+    height: 19px;
+    margin-left: 10px;
+    background-color: var(--dark-grayish-blue);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+#header .btn-container .btn-change-theme > button {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    border: none;
+    float: right;
+}
+
+@keyframes btnMove {
+    0% {float: right;}
+    100% {float: left;}
+}
+
+#fst-stn {
+    display: grid;
+    grid-template-areas: 
+        "one two three four";
+    grid-auto-columns: 1fr;
+    column-gap: 30px;
+    margin-bottom: 50px;
+}
+
+#fst-stn .item-fst-stn:nth-child(1) {
+    grid-area: one;
+    border-top: 5px var(--facebook) solid;
+}
+
+#fst-stn .item-fst-stn:nth-child(2) {
+    grid-area: two;
+    border-top: 5px var(--twitter) solid;
+}
+
+#fst-stn .item-fst-stn:nth-child(3) {
+    grid-area: three;
+    border-top: 5px var(--instagram) solid;
+}
+
+#fst-stn .item-fst-stn:nth-child(4) {
+    grid-area: four;
+    border-top: 5px var(--youtube) solid;
+}
+
+#fst-stn .item-fst-stn {
+    background-color: var(--light-grayish-blue);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 5px;
+    color: var(--very-dark-blue);
+}
+
+#fst-stn .item-fst-stn .social-media-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#fst-stn .ig-container .social-media-user {
+    position: relative;
+}
+
+#fst-stn .ig-container .social-media-user::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    height: 5px; /* Ancho del borde superior */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: var(--instagram); /* Aplica el gradiente como fondo */
+}
+
+#fst-stn .item-fst-stn .social-media-user .user {
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+#fst-stn .item-fst-stn .followers {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+#fst-stn .item-fst-stn .followers-txt {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+#fst-stn .item-fst-stn .count-today  {
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.pos {
+    color: var(--lime-green);
+}
+
+.neg {
+    color: var(--bright-red);
+}
+
+.today-title {
+    margin-bottom: 30px;
+    color: var(--dark-grayish-blue);
+    font-size: 1.5rem;
+}
+
+#snd-stn {
+    display: grid;
+    grid-template-areas: 
+        "one three five seven"
+        "two four six eight";
+    grid-auto-columns: 1fr;
+    gap: 30px;
+}
+
+#snd-stn .item-snd-stn:nth-child(1) {
+    grid-area: one;
+}
+
+#snd-stn .item-snd-stn:nth-child(2) {
+    grid-area: two;
+}
+
+#snd-stn .item-snd-stn:nth-child(3) {
+    grid-area: three;
+}
+
+#snd-stn .item-snd-stn:nth-child(4) {
+    grid-area: four;
+}
+
+#snd-stn .item-snd-stn:nth-child(5) {
+    grid-area: five;
+}
+
+#snd-stn .item-snd-stn:nth-child(6) {
+    grid-area: six;
+}
+
+#snd-stn .item-snd-stn:nth-child(7) {   
+    grid-area: seven;   
+}
+
+#snd-stn .item-snd-stn:nth-child(8) {
+    grid-area: eight;
+}
+
+#snd-stn .item-snd-stn {
+    background-color: var(--light-grayish-blue);
+    padding: 30px;
+
+    display: grid;
+    grid-template-areas: 
+        "one two"
+        "three four";
+    gap: 30px;
+}
+
+#snd-stn .item-snd-stn .item-grid:nth-child(1) {
+    grid-area: one;
+}
+
+#snd-stn .item-snd-stn .item-grid:nth-child(2) {
+    grid-area: two;
+}
+
+#snd-stn .item-snd-stn .item-grid:nth-child(3) {
+    grid-area: three;
+}
+
+#snd-stn .item-snd-stn .item-grid:nth-child(4) {
+    grid-area: four;
+}
+
+#snd-stn .item-snd-stn > p { 
+    font-weight: 700;
+    color: var(--dark-grayish-blue);
+}
+
+#snd-stn .item-snd-stn > img {
+    justify-self: right;
+} 
+
+#snd-stn .item-snd-stn .count-today {
+    font-weight: 700;
+    font-size: 2rem;
+    align-self: end;
+} 
+
+#snd-stn .item-snd-stn .container-percent {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#snd-stn .item-snd-stn .container-percent .percent-today {
+    font-size: .9rem;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+
+/*AGREGAR FONDO*/
