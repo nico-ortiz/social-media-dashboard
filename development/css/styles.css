@@ -1,3 +1,7 @@
+.body {
+    background-color: var(--white);
+}
+
 .background-header {
     background-color: var(--very-pale-blue);
     height: 250px;
@@ -202,6 +206,7 @@
         "one two"
         "three four";
     gap: 30px;
+    border-radius: 5px;
 }
 
 #snd-stn .item-snd-stn .item-grid:nth-child(1) {
@@ -248,8 +253,14 @@
 }
 
 /* DARK THEME */
+.body-dark {
+    background-color: var(--very-dark-blue);
+}
+
 .background-header-dark {
     background-color: var(--very-dark-blue-top);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #header .title-container-dark .title {
@@ -264,8 +275,13 @@
     color: var(--desaturated-blue);
 }
 
+#header .btn-container-dark .btn-change-theme {
+    background: linear-gradient(135deg, var(--twitter), var(--lime-green));
+}
+
 #header .btn-container-dark .btn-change-theme > button {
     background-color: var(--very-dark-blue-top);
+    float: left;
 }
 
 #fst-stn .item-fst-stn-dark, #snd-stn .item-snd-stn-dark {
@@ -276,12 +292,12 @@
     color: var(--desaturated-blue);
 }
 
-#fst-stn .item-fst-stn-dark .followers, .today-title {
+#fst-stn .item-fst-stn-dark .followers, .today-dark-title {
     color: var(--white);
 }
 
-#snd-stn .item-snd-stn-dark > p {
-    color: var(--dark-desaturated-blue);
+#snd-stn .item-snd-stn-dark .paraph {
+    color: var(--desaturated-blue);
 }
 
 #snd-stn .item-snd-stn-dark .count-today {
